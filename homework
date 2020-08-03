@@ -1,0 +1,29 @@
+def evenorodd():
+  x = int(input("Please input a number for the computer to tell if it is even or odd."))
+  r = x % 2
+
+  if r == 0:
+    print("The number is even")
+  else:
+    print("The number is odd")
+
+def windyorcold():
+  windyanswer = int(input("Is it windy outside? If yes, input one, if no, input 2."))
+  if windyanswer == 1:
+    windy = True
+  elif windyanswer == 2:
+    windy = False
+  else:
+    print("Invalid option")
+  coldanswer = int(input("Is it cold outside? If yes, input one, if no, input 2."))
+  if coldanswer == 1:
+    cold = True
+  elif coldanswer == 2:
+    cold = False
+  else:
+    print("Invalid option")
+  
+  if windy or cold:
+    print("Bring the jacket!")
+  else:
+    print("I don't need the jacket")
